@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- javascript-->
+    <script>
+      // function for the first dropdown
+    function show_dropDownMenu(){
+        document.getElementById("dropmenu").style.display="block";
+    }
+    function hide_dropDownMenu(){
+        document.getElementById("dropmenu").style.display="none";
+    }
+    // function for the second dropdown
+    function show_dropDownMenu2(){
+        document.getElementById("dropmenu2").style.display="block";
+    }
+    function hide_dropDownMenu2(){
+        document.getElementById("dropmenu2").style.display="none";
+    }
+    
+    </script>
+  </head>
+  <body>
+    <!-- nav bar-->
+    <nav>
+      <h2>Logo</h2>
+      <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Service</li>
+          <li class="dropdown" onclick="show_dropDownMenu()"><i class="fa fa-bars"></i></li>
+      </ul>
+    </nav>
+  <!--First dropdown container-->
+    <section class="drop" id="dropmenu">
+      <li onclick="hide_dropDownMenu2()">Home</li>
+      <li onclick="hide_dropDownMenu2()">About</li>
+      <li onclick="hide_dropDownMenu2()">Contact</li>
+      <li onclick="show_dropDownMenu2()">Service</li>    
+</section>
+
+ <!--Second dropdown container-->
+
+<section class="drop2" id="dropmenu2">
+  <li onclick="hide_dropDownMenu(),hide_dropDownMenu2()">coding</li>
+  <li onclick="hide_dropDownMenu(),hide_dropDownMenu2()">graphics</li>
+  <li onclick="hide_dropDownMenu(),hide_dropDownMenu2()">Robotics</li>
+</section>  
+    
+     <!--Header container-->
+    <div class="header">
+      <h2>Header</h2>
+    </div>
+
+
+     <!--Content  container-->
+    <div class="content">
+      <h2>content</h2>
+    </div>
+
+   
+  </body>
+
+
+   <!--Footer container-->
+  <footer>
+    <h2>Footer</h2>
+  </footer>
+</html>

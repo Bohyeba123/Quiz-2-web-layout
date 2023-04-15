@@ -1,0 +1,143 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+/*nav bar */
+
+nav{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+    
+}
+nav h2{
+    margin: 2em;
+}
+nav ul{
+    display: flex;
+    gap: 30px;
+    margin: 2em;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    
+    
+}
+/* first drop_down */
+.drop{
+    
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    right: 0;
+box-shadow: 0 6px 9px 0 ;
+    margin: 8.5em 0.5em 0 0;
+    display: none;
+    border-radius: 12px;
+    
+}
+.drop li{
+    padding: 0.7em;
+    list-style: none;
+
+}
+.drop li:hover{
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+.dropdown{
+    display: none;
+}
+/* media query for small screens*/
+
+@media screen and (max-width:600px) {
+    nav ul li:not(.dropdown){
+        display: none;
+    }
+    .dropdown{
+        display: block;
+    }
+    
+}
+
+/* header */
+.header {
+background-color: rgb(236, 255, 127);
+height: 50vh;
+display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.header h2{
+    
+    text-align: center;
+            color: black;
+        
+
+}
+
+/* content */
+.content {
+    background-color: rgb(211, 122, 185);
+    height: 50vh;
+display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.content h2{
+    text-align: center;
+            color: white;
+        
+}
+    
+    /* footer */
+    footer {
+        background-color: black;
+        height: 50vh;
+display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+        footer h2{
+            
+           text-align: center;
+            color: white;
+        
+        }
+        /* second dropdown */
+        .drop2{
+            background-color: aqua;
+            z-index: 99;
+            position: absolute;
+            right: 5em;
+            border-radius: 12px;
+            background-color: #000;
+            color: #fff;
+            margin: 20em 0.5em 0 0;
+            display: none;
+        }
+        .drop2 li{
+            list-style: none;
+            padding: 1em;
+        }
+        .drop2 li:hover{
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+
+        }
+       
+
+        
+      
